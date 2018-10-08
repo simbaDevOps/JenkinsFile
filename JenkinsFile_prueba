@@ -1,0 +1,23 @@
+node {
+    stage('Compilation') {
+        dir('E:/Users/jsaulesc/Desktop/PruebaJava/dfnfd'){
+             echo 'echo Compilation'
+             bat 'gradle clean'
+             bat 'gradle build'
+        }
+       
+    }
+     stage('Test') {
+         
+       echo 'echo Test'
+       
+    } 
+    stage('Analisis') {
+        echo 'echo Analisis'
+    }
+    
+    stage('Deploy') {
+        echo 'echo Deploy'
+    }
+   
+}
