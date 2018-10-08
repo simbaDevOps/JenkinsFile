@@ -1,5 +1,6 @@
 node {
     stage('Compilation') {
+        echo 'echo Compilation'
         dir('E:/Users/jsaulesc/Desktop/PruebaJava/dfnfd'){
              echo 'echo Compilation'
              bat 'gradle clean'
@@ -8,7 +9,6 @@ node {
        
     }
      stage('Test') {
-         
        echo 'echo Test'
        
     } 
